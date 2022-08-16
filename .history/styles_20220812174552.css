@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+/******************************************* NAVBAR SECTION ***********************************************/
+.navbar {
+    background: #131313;   /* Hex code */
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    font-size: 1.4rem;        /* 1.4 x 16px */
+    position: sticky;
+    top: 0;
+    z-index: 999;             /* so navbar is always on top when scrolling - prevents buttons from covering it*/
+}
+
+.navbar_container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto ;           /* (top and bottom) (left and right) */   
+    padding: 0 50px;
+}
+
+  
+/* id(#) is used to style only one element on the webpage */   
+/* class(.) is used to style multiple elements */  
+
+
+/* I added a logo as opposed to text */
+
+#navbar_logo {
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    background-image: linear-gradient(to right, #008dde 0%, #094262 100%);
+}
+
+.navbar_menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    /* added margin
+    margin-right: 20rem; */
+}
+
+.navbar_item {
+    height: 80px;
+}
+
+.navbar_links {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    text-decoration: none;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+/* button properties (if any)*/
+.navbar_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+/* create color gradient for button --see uigradients.com */
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #833ab4;
+    background: -webkit-linear-gradient(to right, #fcb045,#fd1d1d,#833ab4);
+    background: linear-gradient(to right, #fcb045,#fd1d1d,#833ab4);
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+
+/* nav links glow upon hover */
+.navbar_links:hover {
+    color:#9518fc;
+    transition: all 0.3s ease;
+}
