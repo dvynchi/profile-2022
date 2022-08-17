@@ -87,6 +87,11 @@
     transition: all 0.3s ease;
 }
 
+
+.icons {
+    display: flex;
+}
+
 /* RESPONSIVENESS */
 /* site adjusts width of display */
 /* If [device width] is less than or equal to max-width do {..} */
@@ -407,7 +412,7 @@
 
 
 
-/* .submit {
+.submit {
     font-size: 1.5rem;
     background: #7F7FD5;  
     background: -webkit-linear-gradient(to right, #3b837e, #627aa6, #6f6fb9); 
@@ -422,9 +427,9 @@
     color: rgb(234, 216, 216);
     transition: all 0.3s ease;
     outline: none;
-} */
+}
 
-/* .submit a {
+.submit a {
     position: relative;
     z-index: 2;
     color: #fff;
@@ -432,7 +437,7 @@
 }
 
 /* hover effect for button */
-/* .submit::after {
+.submit::after {
     position: absolute;
     content: '';
     top: 0;
@@ -450,4 +455,4 @@
 
 .submit:hover:after {
     width: 100%;
-}  */
+}
