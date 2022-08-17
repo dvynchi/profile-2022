@@ -87,6 +87,69 @@
     transition: all 0.3s ease;
 }
 
+/* create color gradient for button --see uigradients.com */
+/* .col-md-12 button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #7F7FD5; 
+    background: -webkit-linear-gradient(to right, #3b837e, #627aa6, #6f6fb9); 
+    background: linear-gradient(to right, #456c69, #576f9c, #7070bf); 
+    color: #fff;
+    transition: all 0.3s ease;
+} */
+
+.submit {
+    font-size: 1.5rem;
+    background: #7F7FD5;  
+    background: -webkit-linear-gradient(to right, #3b837e, #627aa6, #6f6fb9); 
+    background: linear-gradient(to right, #456c69, #576f9c, #7070bf); 
+    padding: 5px 15px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    color: rgb(234, 216, 216);
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.submit a {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* hover effect for button */
+.submit::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #740274;
+    transition: all 0.35s;
+    border-radius: 4px;
+}
+
+.submit:hover {
+    color: rgb(255, 255, 255);
+}
+
+.submit:hover:after {
+    width: 100%;
+}
 
 /* RESPONSIVENESS */
 /* site adjusts width of display */
@@ -402,53 +465,4 @@
 .main_content p {
     font-size: 1rem;
     margin-top: 1.5rem;
-}
-
-
-
-
-
-.submit {
-    font-size: 1.5rem;
-    background: #7F7FD5;  
-    background: -webkit-linear-gradient(to right, #3b837e, #627aa6, #6f6fb9); 
-    background: linear-gradient(to right, #456c69, #576f9c, #7070bf); 
-    padding: 5px 15px;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    margin-top: 2rem;
-    cursor: pointer;
-    position: relative;
-    color: rgb(234, 216, 216);
-    transition: all 0.3s ease;
-    outline: none;
-}
-
-.submit a {
-    position: relative;
-    z-index: 2;
-    color: #fff;
-    text-decoration: none;
-}
-
-/* hover effect for button */
-.submit::after {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: #740274;
-    transition: all 0.35s;
-    border-radius: 4px;
-}
-
-.submit:hover {
-    color: rgb(255, 255, 255);
-}
-
-.submit:hover:after {
-    width: 100%;
 }
