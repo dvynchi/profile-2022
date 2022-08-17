@@ -406,7 +406,7 @@
 
 
 
-/* 
+
 .submit {
     font-size: 1.5rem;
     background: #7F7FD5;  
@@ -429,10 +429,10 @@
     z-index: 2;
     color: #fff;
     text-decoration: none;
-} */
+}
 
 /* hover effect for button */
-/* .submit::after {
+.submit::after {
     position: absolute;
     content: '';
     top: 0;
@@ -450,4 +450,4 @@
 
 .submit:hover:after {
     width: 100%;
-}  */
+} 
