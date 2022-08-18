@@ -190,20 +190,6 @@
     border-bottom: 4px solid rgb(0, 162, 255);
 }
 
-
-/******************************************* SIDEBAR ***********************************************/
-
-.card-body {
-    background: #0F2027;
-    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  
-    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); 
-    height: 100%;
-}
-
-.card-body h2, .card-body h3, .card-body p {
-    color: #fff;
-}
-
 /******************************************* ABOUT SECTION ***********************************************/
 
 .main {
@@ -228,17 +214,11 @@
     font-size: 2.5rem;
 }
 
-.row {
-    color: #fff;
+.sidebar a {
+    background-color: #131313;
+    color: white;
+    height: 100%;
 }
-
-.card {
-    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  
-    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); 
-}
-/* .m-3 {
-    color: #131313
-} */
 
 
 /* Mobile Responsiveness for About and Contact Section */

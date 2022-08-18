@@ -6,7 +6,9 @@
     scroll-behavior: smooth;
 }
 
-
+.m-3 {
+    color: #131313
+}
 /******************************************* NAV SECTION ***********************************************/
 .nav {
     background: #131313;   /* Hex code */
@@ -231,14 +233,6 @@
 .row {
     color: #fff;
 }
-
-.card {
-    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  
-    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); 
-}
-/* .m-3 {
-    color: #131313
-} */
 
 
 /* Mobile Responsiveness for About and Contact Section */
