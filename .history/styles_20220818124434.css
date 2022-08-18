@@ -237,10 +237,21 @@
     background: linear-gradient(to right, #2C5364, #203A43, #0F2027); 
 }
 
+/* @media screen and (max-width: 1300px) { 
+    .projects_wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+}
 
-/* Mobile Responsiveness for Sidebar, About and Contact Sections */
+@media screen and (max-width: 768px) { 
+    .projects_wrapper {
+        grid-template-columns: 1fr;
+    }
+} */
 
-@media screen and (max-width: 1300px) {
+/* Mobile Responsiveness for About and Contact Section */
+
+@media screen and (max-width: 1100px) {
     main_container 
     {
         display: grid;
@@ -271,7 +282,7 @@
         margin-top: 1.5rem;
     }
 
-    .row img {                                       /* center image with screen change */
+    .row {
         display: grid;
         grid-template-columns: 1fr;
         align-items: center;
@@ -331,13 +342,13 @@
 
 .projects_card:nth-child(2) {
     background: #7F7FD5;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #3b837e, #627aa6, #6f6fb9);  
+    background: -webkit-linear-gradient(to right, #3b837e, #627aa6, #6f6fb9);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #456c69, #576f9c, #7070bf); 
 }
 
 .projects_card:nth-child(3) {
     background: #7F7FD5;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #3b837e, #627aa6, #6f6fb9);  
+    background: -webkit-linear-gradient(to right, #3b837e, #627aa6, #6f6fb9);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #456c69, #576f9c, #7070bf); 
 }
 
