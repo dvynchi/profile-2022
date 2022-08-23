@@ -25,31 +25,31 @@ ham.addEventListener('click', mobileMenu);
 const highlightMenu = () => 
 {
     const elem = document.querySelector('.highlight')
-    const aboutMenu = document.querySelector('#about-page')
-    const projectsMenu = document.querySelector('#projects-page')
+    const homeMenu = document.querySelector('#about-page')
+    const aboutMenu = document.querySelector('#projects-page')
     const contactMenu = document.querySelector('#contact-page')
 
     let scrollPos = window.scrollY
 
       //   Add highlights class to menu items [desktop view only i.e 960px]
       //   Every 600px while scrolling, the tabs auto switch to the corresponding page
-    if (window.innerWidth > 960 && scrollPos < 600) 
+    if (window.innerWidth > 960 && scrollPos < 300) 
     {
-        aboutMenu.classList.add('highlight')
-        projectsMenu.classList.remove('highlight')
+        homeMenu.classList.add('highlight')
+        aboutMenu.classList.remove('highlight')
         return; 
     }
     else if (window.innerWidth > 960 && scrollPos < 1400) 
     {
-        projectsMenu.classList.add('highlight')
-        aboutMenu.classList.remove('highlight')
+        aboutMenu.classList.add('highlight')
+        homeMenu.classList.remove('highlight')
         contactMenu.classList.remove('highlight')
         return;
     }
     else if (window.innerWidth > 960 && scrollPos < 2345) 
     {
         contactMenu.classList.add('highlight')
-        projectsMenu.classList.remove('highlight')
+        aboutMenu.classList.remove('highlight')
         return;
     }
 
@@ -63,15 +63,3 @@ const highlightMenu = () =>
 // call highlightMenu
 window.addEventListener('scroll', highlightMenu);
 window.addEventListener('click', highlightMenu);
-
-
-
-/************************************* reset contact form after submit****************************************************** */
-
-const form = document.getElementById('my_form');
-
-form.addEventListener('submit', function handleSubmit(event) {
-  event.preventDefault();
-
-  form.reset();
-});

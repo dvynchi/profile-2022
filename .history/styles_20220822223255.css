@@ -420,7 +420,8 @@
 
 .main_content {
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
+    padding: 5rem 0;    
 }
 
 .main_content h1 {

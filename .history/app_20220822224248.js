@@ -46,7 +46,7 @@ const highlightMenu = () =>
         contactMenu.classList.remove('highlight')
         return;
     }
-    else if (window.innerWidth > 960 && scrollPos < 2345) 
+    else if (window.innerWidth > 960 && scrollPos < 1500) 
     {
         contactMenu.classList.add('highlight')
         projectsMenu.classList.remove('highlight')
@@ -63,15 +63,3 @@ const highlightMenu = () =>
 // call highlightMenu
 window.addEventListener('scroll', highlightMenu);
 window.addEventListener('click', highlightMenu);
-
-
-
-/************************************* reset contact form after submit****************************************************** */
-
-const form = document.getElementById('my_form');
-
-form.addEventListener('submit', function handleSubmit(event) {
-  event.preventDefault();
-
-  form.reset();
-});

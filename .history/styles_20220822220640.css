@@ -488,8 +488,8 @@
 .btn {
     font-size: 10rem;
     background: #7F7FD5;  
-    background: -webkit-linear-gradient(to right, #75cec8, #91acdc, #8c8cdb); 
-    background: linear-gradient(to right, #77b3ae, #738fc3, #9393df); 
+    background: -webkit-linear-gradient(to right, #3b837e, #627aa6, #6f6fb9); 
+    background: linear-gradient(to right, #456c69, #576f9c, #7070bf); 
     padding: 5px 15px;
     border: none;
     outline: none;
@@ -498,4 +498,5 @@
     position: relative;
     color: rgb(234, 216, 216);
     transition: all 0.3s ease-in;
+    outline-color: #fff;
 } 
