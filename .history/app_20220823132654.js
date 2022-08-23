@@ -65,3 +65,20 @@ window.addEventListener('scroll', highlightMenu);
 window.addEventListener('click', highlightMenu);
 
 
+
+/************************************* reset contact form after submit****************************************************** */
+
+// const form = document.getElementById('my_form');
+
+// form.addEventListener('submit', function handleSubmit(event) {
+//   event.preventDefault();
+
+//   form.reset();
+// });
+
+
+document.querySelector('form').onsubmit = e => {
+    e.target.submit();
+    e.target.reset();
+    return false;
+ };
