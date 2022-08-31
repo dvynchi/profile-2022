@@ -230,10 +230,8 @@
 
 .main_container h2 {
     font-size: 1.5rem;
-    background: -webkit-linear-gradient(#eee, #333);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
+
 
 
 .row {

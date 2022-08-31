@@ -225,15 +225,13 @@
 }
 
 .main_container h3 {
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 .main_container h2 {
-    font-size: 1.5rem;
-    background: -webkit-linear-gradient(#eee, #333);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
 }
+
 
 
 .row {
